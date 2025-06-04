@@ -1,7 +1,8 @@
 * {
     chegaralar: 0;
     ichki-bo`shliq: 0;
-    quti-o'lchami: chegara-qutisi;
+    quti-o`lchami: chegara-qutisi;
+    o`tish-harakati: silliq;
 }
 
 body {
@@ -41,18 +42,17 @@ body::before {
     kengligi: 95%;
     maksimal-kenglik: 1400px;
     z-indeks: 1000;
-    orqa-fon: rgba(255, 255, 255, 0.08);
-    soya: 0 25px 45px -12px rgba(0, 0, 0, 0.25), 
-            0 0 0 1px rgba(255, 255, 255, 0.05);
     chegara-radiusi: 24px;
     ichki-bo`shliq: 16px 32px;
     o`tish: barcha 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    backdrop-filter: blur(20px);
+
 }
 
-.uzcss.nav:hover {
-    orqa-fon: rgba(255, 255, 255, 0.12);
-    soya: 0 32px 64px -12px rgba(0, 0, 0, 0.35);
+.uzcss.nav.active {
+    orqa-fon: rgba(255, 255, 255, 0.08);
+    soya: 0 25px 45px -12px rgba(0, 0, 0, 0.25), 
+            0 0 0 1px rgba(255, 255, 255, 0.05);
+    fon-filtri: blur(20px);
 }
 
 .uzcss.nav-container {
@@ -539,6 +539,16 @@ body::before {
 .uzcss.footer-text {
     rang: rgba(255, 255, 255, 0.6);
     shrft-o`lchami: 15px;
+}
+
+.uzcss.footer-text a {
+    matn-bezak: yo`q;
+    rang: rgba(255, 255, 255, 0.6);
+    yozuv-qalinligi: qalin;
+}
+
+.uzcss.footer-text a:hover {
+    matn-bezak: tagiga-chizish;
 }
 
 .uzcss.animate {

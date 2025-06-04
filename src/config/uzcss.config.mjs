@@ -45,7 +45,7 @@ const properties = {
   "grid-shablon": "grid-template",
   "grid-bo`shliq": "gap",
   "to`lib-ketish-x": "overflow-x",
-  "quti-o'lchami": "box-sizing",
+  "quti-o`lchami": "box-sizing",
   "shrft-oila": "font-family",
   "chegara-past": "border-bottom",
   "chegara-tepa": "border-top",
@@ -62,6 +62,8 @@ const properties = {
   "chegaralar-bottom": "margin-bottom",
   "grid-shablon-ustunlar": "grid-template-columns",
   "tashqi-chegara": "outline",
+  "fon-filtri": "backdrop-filter",
+  "o`tish-harakati": "scroll-behavior",
 };
 
 const values = {
@@ -107,6 +109,7 @@ const values = {
   "yo`q": "none",
   "chegara-qutisi": "border-box",
   barcha: "all",
+  silliq: "smooth",
 };
 
 export { properties, values };
