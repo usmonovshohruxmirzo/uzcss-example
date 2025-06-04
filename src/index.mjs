@@ -16,12 +16,20 @@ function emptyLine() {
 function translateCss(cssContent) {
   let translatedCss = cssContent;
 
-  for (const [uz, en] of Object.entries(properties)) {
+  const sortedProperties = Object.entries(properties).sort(
+    (a, b) => b[0].length - a[0].length
+  );
+
+  for (const [uz, en] of sortedProperties) {
     const regex = new RegExp(`\\b${escapeRegex(uz)}\\b(?=\\s*:)`, "g");
     translatedCss = translatedCss.replace(regex, en);
   }
 
-  for (const [uz, en] of Object.entries(values)) {
+  const sortedValues = Object.entries(values).sort(
+    (a, b) => b[0].length - a[0].length
+  );
+
+  for (const [uz, en] of sortedValues) {
     const regex = new RegExp(
       `(:\\s*)\\b${escapeRegex(uz)}\\b(?=\\s*[;,}\\s]|$)`,
       "g"

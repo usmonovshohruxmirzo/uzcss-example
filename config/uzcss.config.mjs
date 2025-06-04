@@ -5,8 +5,8 @@ const properties = {
   chegaralar: "margin",
   "ichki-bo`shliq": "padding",
   "ko`rsatish": "display",
-  kenglik: "width",
-  balandlik: "height",
+  kengligi: "width",
+  balandligi: "height",
   "chegara-radiusi": "border-radius",
   "matn-holat": "text-align",
   "yozuv-qalinligi": "font-weight",
@@ -49,8 +49,10 @@ const properties = {
   "shrft-oila": "font-family",
   "chegara-past": "border-bottom",
   "chegara-tepa": "border-top",
-  "maksimal-width": "max-width",
-  "minimal-width": "min-width",
+  "maksimal-balandlik": "max-height",
+  "minimal-balandlik": "min-height",
+  "minimal-kenglik": "min-width",
+  "maksimal-kenglik": "max-width",
   "orqa-fon": "background",
   "bo`shliq": "gap",
   "ro`yxat-uslubi": "list-style",
@@ -59,6 +61,7 @@ const properties = {
   animatsiya: "animation",
   "chegaralar-bottom": "margin-bottom",
   "grid-shablon-ustunlar": "grid-template-columns",
+  "tashqi-chegara": "outline",
 };
 
 const values = {
