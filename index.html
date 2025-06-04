@@ -11,7 +11,6 @@
     />
   </head>
   <body>
-    <!-- Ultra Modern Navigation -->
     <nav class="uzcss nav">
       <div class="uzcss nav-container">
         <a href="#" class="uzcss logo">uzCSS</a>
@@ -24,7 +23,6 @@
       </div>
     </nav>
 
-    <!-- Ultra Modern Hero Section -->
     <section class="uzcss hero">
       <div class="uzcss hero-content">
         <h1 class="uzcss animate">uzCSS - O'zbek tilida CSS</h1>
@@ -44,7 +42,6 @@
       </div>
     </section>
 
-    <!-- Ultra Modern Featured Features -->
     <section class="uzcss featured" id="featured">
       <h2 class="uzcss section-title animate">Asosiy Xususiyatlar</h2>
       <div class="uzcss posts-grid">
@@ -142,7 +139,6 @@
       </div>
     </section>
 
-    <!-- Modern Categories -->
     <section class="uzcss categories" id="categories">
       <h2 class="uzcss section-title animate">Qo'llanma</h2>
       <div class="uzcss categories-grid">
@@ -196,7 +192,6 @@
       </div>
     </section>
 
-    <!-- Modern About -->
     <section class="uzcss about" id="about">
       <div class="uzcss about-content">
         <h2 class="uzcss section-title animate">Loyiha haqida</h2>
@@ -236,7 +231,6 @@
       </div>
     </section>
 
-    <!-- Ultra Modern Newsletter -->
     <section class="uzcss newsletter" id="newsletter">
       <div class="uzcss newsletter-content">
         <h2 class="uzcss animate">Yangiliklar</h2>
@@ -258,7 +252,6 @@
       </div>
     </section>
 
-    <!-- Modern Footer -->
     <footer class="uzcss footer">
       <div class="uzcss footer-content">
         <ul class="uzcss footer-links">
@@ -279,7 +272,6 @@
     </footer>
 
     <script>
-      // Smooth scrolling for navigation links
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
@@ -293,7 +285,6 @@
         });
       });
 
-      // Intersection Observer for animations
       const observerOptions = {
         threshold: 0.1,
         rootMargin: "0px 0px -50px 0px",
@@ -307,12 +298,10 @@
         });
       }, observerOptions);
 
-      // Observe all animate elements
       document.querySelectorAll(".uzcss.animate").forEach((el) => {
         observer.observe(el);
       });
 
-      // Newsletter form submission
       document
         .querySelector(".uzcss.newsletter-form")
         .addEventListener("submit", function (e) {
@@ -328,7 +317,6 @@
           }
         });
 
-      // Add some interactive effects
       document
         .querySelectorAll(".uzcss.post-card, .uzcss.category-card")
         .forEach((card) => {

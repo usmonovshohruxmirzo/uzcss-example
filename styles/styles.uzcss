@@ -1,4 +1,3 @@
-/* Reset & Base */
 * {
     chegaralar: 0;
     ichki-bo`shliq: 0;
@@ -15,7 +14,6 @@ body {
     minimal-balandlik: 100vh;
 }
 
-/* Animated Background */
 body::before {
     kontent: '';
     pozitsiya: qo`zg`almas;
@@ -35,7 +33,6 @@ body::before {
     100% { shaffoflik: 0.8; }
 }
 
-/* Glassmorphism Navigation */
 .uzcss.nav {
     pozitsiya: qo`zg`almas;
     yuqori: 20px;
@@ -97,7 +94,6 @@ body::before {
     transformatsiya: translateY(-2px);
 }
 
-/* Ultra Modern Hero */
 .uzcss.hero {
     balandligi: 100vh;
     ko`rsatish: moslashuvchan;
@@ -210,7 +206,6 @@ body::before {
     chegara-rangi: rgba(255, 255, 255, 0.4);
 }
 
-/* Modern Section Styling */
 .uzcss.featured {
     ichki-bo`shliq: 120px 20px;
     orqa-fon: rgba(0, 0, 0, 0.2);
@@ -237,7 +232,6 @@ body::before {
     chegaralar: 0 auto;
 }
 
-/* Ultra Modern Cards */
 .uzcss.post-card {
     orqa-fon: rgba(255, 255, 255, 0.03);
     soya: 0 25px 50px -12px rgba(0, 0, 0, 0.25),
@@ -323,7 +317,6 @@ body::before {
     shrft-o`lchami: 15px;
 }
 
-/* Modern Categories */
 .uzcss.categories {
     ichki-bo`shliq: 120px 20px;
     orqa-fon: rgba(0, 0, 0, 0.1);
@@ -398,7 +391,6 @@ body::before {
     z-indeks: 1;
 }
 
-/* Ultra Modern Newsletter */
 .uzcss.newsletter {
     ichki-bo`shliq: 120px 20px;
     matn-holat: markaz;
@@ -459,7 +451,6 @@ body::before {
     rang: rgba(255, 255, 255, 0.5);
 }
 
-/* Modern About */
 .uzcss.about {
     ichki-bo`shliq: 120px 20px;
     orqa-fon: rgba(0, 0, 0, 0.1);
@@ -509,7 +500,6 @@ body::before {
     yozuv-qalinligi: 500;
 }
 
-/* Modern Footer */
 .uzcss.footer {
     orqa-fon: rgba(0, 0, 0, 0.3);
     ichki-bo`shliq: 80px 20px;
@@ -551,7 +541,6 @@ body::before {
     shrft-o`lchami: 15px;
 }
 
-/* Animation Classes */
 .uzcss.animate {
     shaffoflik: 0;
     transformatsiya: translateY(40px);
@@ -563,7 +552,6 @@ body::before {
     transformatsiya: translateY(0);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .uzcss.hero h1 {
         shrft-o`lchami: 48px;
