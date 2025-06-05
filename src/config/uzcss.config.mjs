@@ -29,7 +29,7 @@ const properties = {
   "o`tish": "transition",
   transformatsiya: "transform",
   "tashqi-chegara": "outline",
-  soya: "box-shadow",
+  "element-soyasi": "box-shadow",
   "matn-soyasi": "text-shadow",
   "satr-balandligi": "line-height",
   "harf-oraligi": "letter-spacing",
