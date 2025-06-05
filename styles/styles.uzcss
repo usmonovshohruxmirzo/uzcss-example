@@ -22,11 +22,11 @@ body::before {
     chap: 0;
     kengligi: 100%;
     balandligi: 100%;
-    orqa-fon: doiraviy-rang-oqimi(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-                doiraviy-rang-oqimi(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
-                doiraviy-rang-oqimi(circle at 40% 40%, rgba(120, 219, 255, 0.2) 0%, transparent 50%);
+    orqa-fon: doiraviy-rang-oqimi(aylana da 20% 80%, rgba(120, 119, 198, 0.3) 0%, shaffof 50%),
+                doiraviy-rang-oqimi(aylana da 80% 20%, rgba(255, 119, 198, 0.3) 0%, shaffof 50%),
+                doiraviy-rang-oqimi(aylana da 40% 40%, rgba(120, 219, 255, 0.2) 0%, shaffof 50%);
     z-indeks: -1;
-    animatsiya: pulse 4s ease-in-out infinite alternate;
+    animatsiya: pulse 4s ease-in-out cheksiz navbatma-navbat;
 }
 
 @asosiy-kadrlar pulse {
@@ -50,8 +50,7 @@ body::before {
 
 .nav.active {
     orqa-fon: rgba(255, 255, 255, 0.08);
-    element-soyasi: 0 25px 45px -12px rgba(0, 0, 0, 0.25), 
-            0 0 0 1px rgba(255, 255, 255, 0.05);
+    element-soyasi: 0 25px 45px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.05);
     orqa-fon-filtri: xiralashish(20px);
 }
 
@@ -66,7 +65,7 @@ body::before {
     yozuv-qalinligi: qalin;
     orqa-fon: chiziqli-rang-oqimi(135deg, #667eea, #764ba2, #f093fb);
     veb-to`plam-orqa-fon-klipi: matn;
-    veb-to`plam-to`ldirish-rangi: transparent;
+    veb-to`plam-to`ldirish-rangi: shaffof;
     orqa-fon-klipi: matn;
     harf-oraligi: -2px;
     matn-bezak: yo`q;
@@ -119,10 +118,10 @@ body::before {
     harf-oraligi: -3px;
     orqa-fon: chiziqli-rang-oqimi(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
     veb-to`plam-orqa-fon-klipi: text;
-    veb-to`plam-to`ldirish-rangi: transparent;
+    veb-to`plam-to`ldirish-rangi: shaffof;
     orqa-fon-klipi: text;
     orqa-fon-o`lchami: 200% 200%;
-    animatsiya: gradientShift 3s ease-in-out infinite;
+    animatsiya: gradientShift 3s ease-in-out cheksiz;
 }
 
 @asosiy-kadrlar gradientShift {
@@ -226,7 +225,7 @@ body::before {
 
 .posts-grid {
     ko`rsatish: tor;
-    grid-shablon-ustunlar: repeat(avtomatik-fit, minmax(380px, 1fr));
+    grid-shablon-ustunlar: takrorlash(avtomatik-moslashuv, min-va-maks(380px, 1fr));
     bo`shliq: 32px;
     maksimal-kenglik: 1400px;
     chegaralar: 0 avtomatik;
@@ -234,8 +233,7 @@ body::before {
 
 .post-card {
     orqa-fon: rgba(255, 255, 255, 0.03);
-    element-soyasi: 0 25px 50px -12px rgba(0, 0, 0, 0.25),
-            0 0 0 1px rgba(255, 255, 255, 0.05);
+    element-soyasi: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.05);
     chegara-radiusi: 24px;
     to`lib-ketish: yashirin;
     o`tish: barcha 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -262,8 +260,7 @@ body::before {
 
 .post-card:hover {
     transformatsiya: Y-o`qi-bo`ylab-xarakat(-12px) X-o`qi-bo`ylab-aylantirish(5deg);
-    element-soyasi: 0 35px 80px -12px rgba(0, 0, 0, 0.4),
-            0 0 0 1px rgba(255, 255, 255, 0.1);
+    element-soyasi: 0 35px 80px -12px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
 .post-image {
@@ -286,7 +283,7 @@ body::before {
     chap: 0;
     kengligi: 100%;
     balandligi: 100%;
-    orqa-fon: doiraviy-rang-oqimi(circle at center, transparent 30%, rgba(0, 0, 0, 0.2) 100%);
+    orqa-fon: doiraviy-rang-oqimi(aylana da markaz, shaffof 30%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .post-content {
@@ -324,7 +321,7 @@ body::before {
 
 .categories-grid {
     ko`rsatish: tor;
-    grid-shablon-ustunlar: repeat(avtomatik-fit, minmax(280px, 1fr));
+    grid-shablon-ustunlar: takrorlash(avtomatik-moslashuv, min-va-maks(280px, 1fr));
     bo`shliq: 28px;
     maksimal-kenglik: 1200px;
     chegaralar: 0 avtomatik;
@@ -332,8 +329,7 @@ body::before {
 
 .category-card {
     orqa-fon: rgba(255, 255, 255, 0.05);
-    element-soyasi: 0 20px 40px -12px rgba(0, 0, 0, 0.2),
-            0 0 0 1px rgba(255, 255, 255, 0.05);
+    element-soyasi: 0 20px 40px -12px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.05);
     ichki-bo`shliq: 40px;
     chegara-radiusi: 20px;
     matn-holati: markaz;
@@ -363,8 +359,7 @@ body::before {
 
 .category-card:hover {
     transformatsiya: Y-o`qi-bo`ylab-xarakat(-8px);
-    element-soyasi: 0 30px 60px -12px rgba(0, 0, 0, 0.3),
-            0 0 0 1px rgba(255, 255, 255, 0.1);
+    element-soyasi: 0 30px 60px -12px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
 .category-icon {
@@ -464,7 +459,7 @@ body::before {
 
 .about-stats {
     ko`rsatish: tor;
-    grid-shablon-ustunlar: repeat(avtomatik-fit, minmax(200px, 1fr));
+    grid-shablon-ustunlar: takrorlash(avtomatik-moslashuv, min-va-maks(200px, 1fr));
     bo`shliq: 48px;
     chegara-past: 80px;
 }

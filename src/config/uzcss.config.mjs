@@ -120,6 +120,12 @@ const values = {
   avtomatik: "auto",
   "o`rash": "wrap",
   shaffoflik: "opacity",
+  aylana: "circle",
+  da: "at",
+  markaz: "center",
+  cheksiz: "infinite",
+  "navbatma-navbat": "alternate",
+  "avtomatik-moslashuv": "auto-fit",
 };
 
 const atRuleReplacements = {
@@ -141,6 +147,8 @@ const functionsReplacements = {
   matritsa: "matrix",
   "chiziqli-rang-oqimi": "linear-gradient",
   "doiraviy-rang-oqimi": "radial-gradient",
+  takrorlash: "repeat",
+  "min-va-maks": "minmax",
 };
 
 export { properties, values, atRuleReplacements, functionsReplacements };
