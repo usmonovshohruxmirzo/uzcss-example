@@ -114,7 +114,7 @@ body::before {
 .hero h1 {
     font-size: 80px;
     font-weight: bold;
-    border-bottom: 32px;
+    margin-bottom: 32px;
     letter-spacing: -3px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
     -webkit-background-clip: text;
@@ -132,7 +132,7 @@ body::before {
 .hero p {
     font-size: 24px;
     color: rgba(255, 255, 255, 0.85);
-    border-bottom: 48px;
+    margin-bottom: 48px;
     line-height: 1.6;
     max-width: 700px;
     margin: 0 auto 48px;
@@ -158,8 +158,7 @@ body::before {
     overflow: hidden;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4),
-            0 5px 15px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4), 0 5px 15px rgba(0, 0, 0, 0.12);
 }
 
 .btn::before {
@@ -215,7 +214,7 @@ body::before {
     font-size: 56px;
     font-weight: bold;
     text-align: center;
-    border-bottom: 80px;
+    margin-bottom: 80px;
     background: linear-gradient(135deg, #667eea, #764ba2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -295,7 +294,7 @@ body::before {
 .post-meta {
     font-size: 13px;
     color: rgba(255, 255, 255, 0.6);
-    border-bottom: 16px;
+    margin-bottom: 16px;
     font-weight: 500;
     letter-spacing: 0.5px;
 }
@@ -303,7 +302,7 @@ body::before {
 .post-title {
     font-size: 22px;
     font-weight: bold;
-    border-bottom: 16px;
+    margin-bottom: 16px;
     color: white;
     line-height: 1.4;
 }
@@ -364,7 +363,7 @@ body::before {
 
 .category-icon {
     font-size: 40px;
-    border-bottom: 20px;
+    margin-bottom: 20px;
     color: #667eea;
     position: relative;
     z-index: 1;
@@ -373,7 +372,7 @@ body::before {
 .category-name {
     font-size: 20px;
     font-weight: bold;
-    border-bottom: 12px;
+    margin-bottom: 12px;
     color: white;
     position: relative;
     z-index: 1;
@@ -401,7 +400,7 @@ body::before {
 .newsletter h2 {
     font-size: 48px;
     font-weight: bold;
-    border-bottom: 24px;
+    margin-bottom: 24px;
     background: linear-gradient(135deg, #667eea, #764ba2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -411,7 +410,7 @@ body::before {
 .newsletter p {
     font-size: 20px;
     color: rgba(255, 255, 255, 0.8);
-    border-bottom: 40px;
+    margin-bottom: 50px;
     line-height: 1.6;
 }
 
@@ -461,7 +460,7 @@ body::before {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 48px;
-    border-bottom: 80px;
+    margin-bottom: 80px;
 }
 
 .stat-item {
@@ -486,7 +485,7 @@ body::before {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    border-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 .stat-label {
@@ -499,20 +498,21 @@ body::before {
     background: rgba(0, 0, 0, 0.3);
     padding: 80px 20px;
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 1px solid rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
 }
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+    gap: 20px;
 }
 
 .footer-links {
     display: flex;
     justify-content: center;
     gap: 40px;
-    border-bottom: 40px;
+    margin-bottom: 40px;
     list-style: none;
     flex-wrap: wrap;
 }
@@ -534,6 +534,7 @@ body::before {
 .footer-text {
     color: rgba(255, 255, 255, 0.6);
     font-size: 15px;
+    margin-top: 50px;
 }
 
 .footer-text a {
