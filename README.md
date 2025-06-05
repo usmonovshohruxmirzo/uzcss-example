@@ -42,8 +42,11 @@ You can then open `index.html` in your browser to view the site.
 ```
 uzcss-example/
 ├── dist/
-│   └── style.css        # Auto-generated CSS file
-├── src/
+│   └── style.css           # Auto-generated CSS file
+├── src/                    # Source directory
+│   ├── index.mjs           # Entry point script
+│   └── uzcss.config.mjs    # Already configured UZCSS config file
+├── styles/
 │   └── styles.uzcss     # Main stylesheet written in Uzbek syntax
 ├── index.html           # Demo page
 ├── package.json         # Project config
