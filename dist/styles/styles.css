@@ -34,7 +34,7 @@ body::before {
     100% { opacity: 0.8; }
 }
 
-.uzcss.nav {
+.nav {
     position: fixed;
     top: 20px;
     left: 50%;
@@ -48,20 +48,20 @@ body::before {
 
 }
 
-.uzcss.nav.active {
+.nav.active {
     background: rgba(255, 255, 255, 0.08);
     box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.25), 
             0 0 0 1px rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(20px);
+    fon-filtri: blur(20px);
 }
 
-.uzcss.nav-container {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.uzcss.logo {
+.logo {
     font-size: 32px;
     font-weight: bold;
     background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
@@ -72,13 +72,13 @@ body::before {
     text-decoration: none;
 }
 
-.uzcss.nav-links {
+.nav-links {
     display: flex;
     gap: 40px;
     list-style: none;
 }
 
-.uzcss.nav-link {
+.nav-link {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     font-weight: 500;
@@ -88,13 +88,13 @@ body::before {
     position: relative;
 }
 
-.uzcss.nav-link:hover {
+.nav-link:hover {
     color: white;
     background: rgba(255, 255, 255, 0.1);
     transform: translateY(-2px);
 }
 
-.uzcss.hero {
+.hero {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -106,16 +106,16 @@ body::before {
     overflow: hidden;
 }
 
-.uzcss.hero-content {
+.hero-content {
     max-width: 900px;
     position: relative;
     z-index: 2;
 }
 
-.uzcss.hero h1 {
+.hero h1 {
     font-size: 80px;
     font-weight: bold;
-    margin-bottom: 32px;
+    border-bottom: 32px;
     letter-spacing: -3px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
     -webkit-background-clip: text;
@@ -130,23 +130,23 @@ body::before {
     50% { background-position: 100% 50%; }
 }
 
-.uzcss.hero p {
+.hero p {
     font-size: 24px;
     color: rgba(255, 255, 255, 0.85);
-    margin-bottom: 48px;
+    border-bottom: 48px;
     line-height: 1.6;
     max-width: 700px;
     margin: 0 auto 48px;
 }
 
-.uzcss.hero-buttons {
+.hero-buttons {
     display: flex;
     gap: 24px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.uzcss.btn {
+.btn {
     position: relative;
     padding: 18px 40px;
     border-radius: 50px;
@@ -163,7 +163,7 @@ body::before {
             0 5px 15px rgba(0, 0, 0, 0.12);
 }
 
-.uzcss.btn::before {
+.btn::before {
     content: '';
     position: absolute;
     top: 0;
@@ -173,50 +173,50 @@ body::before {
     background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
     border-radius: 50px;
     opacity: 0;
-    transition: shaffoflik 0.4s;
+    transition: opacity 0.4s;
 }
 
-.uzcss.btn:hover::before {
+.btn:hover::before {
     opacity: 1;
 }
 
-.uzcss.btn:hover {
+.btn:hover {
     transform: translateY(-4px);
     box-shadow: 0 25px 50px rgba(102, 126, 234, 0.6),
             0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.uzcss.btn span {
+.btn span {
     position: relative;
     z-index: 1;
 }
 
-.uzcss.btn-outline {
+.btn-outline {
     background: rgba(255, 255, 255, 0.05);
     border: 2px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
     backdrop-filter: blur(10px);
 }
 
-.uzcss.btn-outline::before {
+.btn-outline::before {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.uzcss.btn-outline:hover {
+.btn-outline:hover {
     border-color: rgba(255, 255, 255, 0.4);
 }
 
-.uzcss.featured {
+.featured {
     padding: 120px 20px;
     background: rgba(0, 0, 0, 0.2);
     position: relative;
 }
 
-.uzcss.section-title {
+.section-title {
     font-size: 56px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 80px;
+    border-bottom: 80px;
     background: linear-gradient(135deg, #667eea, #764ba2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -224,7 +224,7 @@ body::before {
     letter-spacing: -2px;
 }
 
-.uzcss.posts-grid {
+.posts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 32px;
@@ -232,7 +232,7 @@ body::before {
     margin: 0 auto;
 }
 
-.uzcss.post-card {
+.post-card {
     background: rgba(255, 255, 255, 0.03);
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25),
             0 0 0 1px rgba(255, 255, 255, 0.05);
@@ -243,7 +243,7 @@ body::before {
     position: relative;
 }
 
-.uzcss.post-card::before {
+.post-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -253,20 +253,20 @@ body::before {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
     border-radius: 24px;
     opacity: 0;
-    transition: shaffoflik 0.4s;
+    transition: opacity 0.4s;
 }
 
-.uzcss.post-card:hover::before {
+.post-card:hover::before {
     opacity: 1;
 }
 
-.uzcss.post-card:hover {
+.post-card:hover {
     transform: translateY(-12px) rotateX(5deg);
     box-shadow: 0 35px 80px -12px rgba(0, 0, 0, 0.4),
             0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
-.uzcss.post-image {
+.post-image {
     width: 100%;
     height: 220px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
@@ -279,7 +279,7 @@ body::before {
     overflow: hidden;
 }
 
-.uzcss.post-image::before {
+.post-image::before {
     content: '';
     position: absolute;
     top: 0;
@@ -289,40 +289,40 @@ body::before {
     background: radial-gradient(circle at center, transparent 30%, rgba(0, 0, 0, 0.2) 100%);
 }
 
-.uzcss.post-content {
+.post-content {
     padding: 32px;
     position: relative;
     z-index: 1;
 }
 
-.uzcss.post-meta {
+.post-meta {
     font-size: 13px;
     color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 16px;
+    border-bottom: 16px;
     font-weight: 500;
     letter-spacing: 0.5px;
 }
 
-.uzcss.post-title {
+.post-title {
     font-size: 22px;
     font-weight: bold;
-    margin-bottom: 16px;
+    border-bottom: 16px;
     color: white;
     line-height: 1.4;
 }
 
-.uzcss.post-excerpt {
+.post-excerpt {
     color: rgba(255, 255, 255, 0.75);
     line-height: 1.7;
     font-size: 15px;
 }
 
-.uzcss.categories {
+.categories {
     padding: 120px 20px;
     background: rgba(0, 0, 0, 0.1);
 }
 
-.uzcss.categories-grid {
+.categories-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 28px;
@@ -330,7 +330,7 @@ body::before {
     margin: 0 auto;
 }
 
-.uzcss.category-card {
+.category-card {
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.2),
             0 0 0 1px rgba(255, 255, 255, 0.05);
@@ -344,7 +344,7 @@ body::before {
     overflow: hidden;
 }
 
-.uzcss.category-card::before {
+.category-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -354,80 +354,80 @@ body::before {
     background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
     border-radius: 20px;
     opacity: 0;
-    transition: shaffoflik 0.4s;
+    transition: opacity 0.4s;
 }
 
-.uzcss.category-card:hover::before {
+.category-card:hover::before {
     opacity: 1;
 }
 
-.uzcss.category-card:hover {
+.category-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.3),
             0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
-.uzcss.category-icon {
+.category-icon {
     font-size: 40px;
-    margin-bottom: 20px;
+    border-bottom: 20px;
     color: #667eea;
     position: relative;
     z-index: 1;
 }
 
-.uzcss.category-name {
+.category-name {
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 12px;
+    border-bottom: 12px;
     color: white;
     position: relative;
     z-index: 1;
 }
 
-.uzcss.category-count {
+.category-count {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.7);
     position: relative;
     z-index: 1;
 }
 
-.uzcss.newsletter {
+.newsletter {
     padding: 120px 20px;
     text-align: center;
     background: rgba(0, 0, 0, 0.2);
     position: relative;
 }
 
-.uzcss.newsletter-content {
+.newsletter-content {
     max-width: 700px;
     margin: 0 auto;
 }
 
-.uzcss.newsletter h2 {
+.newsletter h2 {
     font-size: 48px;
     font-weight: bold;
-    margin-bottom: 24px;
+    border-bottom: 24px;
     background: linear-gradient(135deg, #667eea, #764ba2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.uzcss.newsletter p {
+.newsletter p {
     font-size: 20px;
     color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 40px;
+    border-bottom: 40px;
     line-height: 1.6;
 }
 
-.uzcss.newsletter-form {
+.newsletter-form {
     display: flex;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.uzcss.email-input {
+.email-input {
     flex: 1;
     min-width: 320px;
     padding: 20px 24px;
@@ -441,35 +441,35 @@ body::before {
     transition: all 0.3s;
 }
 
-.uzcss.email-input:focus {
+.email-input:focus {
     border-color: #667eea;
     background: rgba(255, 255, 255, 0.08);
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
-.uzcss.email-input::placeholder {
+.email-input::placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.uzcss.about {
+.about {
     padding: 120px 20px;
     background: rgba(0, 0, 0, 0.1);
 }
 
-.uzcss.about-content {
+.about-content {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
 }
 
-.uzcss.about-stats {
+.about-stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 48px;
-    margin-bottom: 80px;
+    border-bottom: 80px;
 }
 
-.uzcss.stat-item {
+.stat-item {
     background: rgba(255, 255, 255, 0.03);
     box-shadow: 0 15px 35px -8px rgba(0, 0, 0, 0.2),
             0 0 0 1px rgba(255, 255, 255, 0.05);
@@ -479,28 +479,28 @@ body::before {
     transition: all 0.3s;
 }
 
-.uzcss.stat-item:hover {
+.stat-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 25px 50px -8px rgba(0, 0, 0, 0.3);
 }
 
-.uzcss.stat-number {
+.stat-number {
     font-size: 56px;
     font-weight: bold;
     background: linear-gradient(135deg, #667eea, #764ba2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: 12px;
+    border-bottom: 12px;
 }
 
-.uzcss.stat-label {
+.stat-label {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.7);
     font-weight: 500;
 }
 
-.uzcss.footer {
+.footer {
     background: rgba(0, 0, 0, 0.3);
     padding: 80px 20px;
     text-align: center;
@@ -508,21 +508,21 @@ body::before {
     backdrop-filter: blur(10px);
 }
 
-.uzcss.footer-content {
+.footer-content {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.uzcss.footer-links {
+.footer-links {
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-bottom: 40px;
+    border-bottom: 40px;
     list-style: none;
     flex-wrap: wrap;
 }
 
-.uzcss.footer-link {
+.footer-link {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     padding: 12px 20px;
@@ -531,67 +531,67 @@ body::before {
     font-weight: 500;
 }
 
-.uzcss.footer-link:hover {
+.footer-link:hover {
     color: white;
     background: rgba(255, 255, 255, 0.05);
 }
 
-.uzcss.footer-text {
+.footer-text {
     color: rgba(255, 255, 255, 0.6);
     font-size: 15px;
 }
 
-.uzcss.footer-text a {
+.footer-text a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
     font-weight: bold;
 }
 
-.uzcss.footer-text a:hover {
+.footer-text a:hover {
     text-decoration: underline;
 }
 
-.uzcss.animate {
+.animate {
     opacity: 0;
     transform: translateY(40px);
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.uzcss.animate.visible {
+.animate.visible {
     opacity: 1;
     transform: translateY(0);
 }
 
 @media (max-width: 768px) {
-    .uzcss.hero h1 {
+    .hero h1 {
         font-size: 48px;
     }
     
-    .uzcss.hero p {
+    .hero p {
         font-size: 18px;
     }
     
-    .uzcss.section-title {
+    .section-title {
         font-size: 36px;
     }
     
-    .uzcss.nav-links {
+    .nav-links {
         display: none;
     }
     
-    .uzcss.newsletter-form {
+    .newsletter-form {
         flex-direction: column;
     }
     
-    .uzcss.email-input {
+    .email-input {
         min-width: 100%;
     }
 
-    .uzcss.posts-grid {
+    .posts-grid {
         grid-template-columns: 1fr;
     }
 
-    .uzcss.nav {
+    .nav {
         width: 90%;
         padding: 12px 20px;
     }
