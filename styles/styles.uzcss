@@ -52,7 +52,7 @@ body::before {
     orqa-fon: rgba(255, 255, 255, 0.08);
     soya: 0 25px 45px -12px rgba(0, 0, 0, 0.25), 
             0 0 0 1px rgba(255, 255, 255, 0.05);
-    fon-filtri: xiralashish(20px);
+    orqa-fon-filtri: xiralashish(20px);
 }
 
 .nav-container {
